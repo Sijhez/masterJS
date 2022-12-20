@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con JS</title>
+
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin:20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 3px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 1. Formulario con campos: nombre, apellidos y edad
+        2. boton para enviar formulario
+        3. mostrar datos en la pantalla
+        4. boton que nos muestre los datos actuales del formulario
+        5. validacion de formulario
+    -->
+    <section class="box">
+        <!-- onsubmit="return false" -->
+        <form action="" method="POST" id="myForm" >
+            <label for='nombre'>Nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre"><br>
+            <span id="error_nombre" style="color: red;"></span>
+            <br>
+            <label for='apellidos'>Apellidos:</label>
+            <br> 
+            <input type="text" name="apellidos" id="apellidos"><br>
+            <span id="error_apellido" style="color: red;"></span>
+            <br>
+            <label for='edad'>Edad:</label>
+            <br>
+            <input type="number" name="edad" id="edad"><br>
+            <span id="error_edad" style="color: red;"></span>
+            <br><br>
+            <input type="submit" value="Enviar" id="submitForm">
+
+
+        </form>
+    </section>
+    <div class="box dashed">
+        <h3>Informacion del usuario</h3>
+        <hr>
+        <p id="p_nombre"><b>Nombre:</b>
+        <span></span></p>
+        <p id='p_apellidos'><b>Apellidos:</b>
+        <span></span></p>
+        <p id='p_edad'><b>Edad:</b>
+        <span></span></p>
+    </div>
+    <script src="ejercicioDOM.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./events.js"></script>
+    <style>
+        #caja{
+            width: 250px;
+            height: 250px;
+            border:2px solid darkred;
+            background: yellow;
+            transition: .5s all;
+        }
+/*         ANIMADO CON CSS
+        #caja:hover{
+            background: red;
+            cursor: pointer;
+            
+        } */
+        input{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+        input:focus-visible{
+            outline: none;
+        }
+        #datos{
+            border: 4px dashed black;
+           padding: 10px;
+           width: 250px;
+           height: 100px;
+           margin-top:  10px;
+           display: none;
+        }
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: red;
+            border: 2px solid black;
+            opacity: .3;
+            border-radius:100% ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos con JQUERY</h1>
+
+    <div id="sigueme">
+
+    </div>
+
+    <form action="">
+        <input type="text" name="nombre" id="nombre" autocomplete="off">
+    </form>
+    <div id="datos">
+
+    </div>
+    <br>
+    <div id="caja">
+        Soy una cajita bro
+    </div>
+    
+</body>
+</html>

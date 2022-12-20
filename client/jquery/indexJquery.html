@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Jquery</title>
+    <!-- integramos jquery con el link -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    -->
+    <!-- descargando el archivo directamente -->
+   <script src="./js/jquery-3.6.0.min.js"></script>
+   <!-- compatibilidad con navegadores antiguos -->
+   <style type="text/css">
+      .borde_amarillo{
+         border: 5px solid yellow;
+      }
+      .zebra{
+         border:5px dashed black;
+      }
+      .grande{
+         font-size: 30px;
+      }
+      .marg-sup{
+         margin-top: 20px;
+         display: block;
+      }
+      .resaltado{
+         border-bottom: 2px solid red;
+      }
+   </style>
+</head>
+<body>
+<h1>Hora de Jquery</h1>
+<p id="rojo" class="zebra">Ejercicio de jquery</p>
+<p id="amarillo">Este es otro parrafo</p>
+<p id="verde" class="sin_borde">quiero ser un parrafo verde</p>
+<p class="zebra">Soy un parrafo banco</p>
+<ul>
+   <li><a href="https://google.com" title="Google">Ir a Google</a></li>
+   <li><a href="https://www.facebook.com/" title="Facebook">Ir a Facebook</a></li>
+   <li><a href="https://instagram.com" title="Instagram">ir a Instagram</a></li>
+</ul>
+
+<div id="caja">
+   <h4>Hola, soy una caja</h4>
+   <ul>
+      <li>Elemento1</li>
+      <li class="resaltado">Elemento2</li>
+   </ul>
+   <span class="resaltado">
+      Soy un span
+   </span>
+</div>
+
+   <script src="jquery-1.js"></script> 
+</body>
+</html>
